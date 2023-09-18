@@ -40,6 +40,22 @@
       ]
    },
    {
+      "uid":"alerting",
+      "label":"Alerting",
+      "icon":"alert",
+      "role":"Editor",
+      "children":[
+         {
+            "uid":"notificationlist",
+            "label":"Notification List",
+            "path":"/alerting/notifications",
+            "icon":"list",
+			"component":"/alerting/notifications/*",
+            "role":"Editor"
+         }
+      ]
+   },
+   {
       "uid":"setting",
       "label":"Setting",
       "path":"/setting",
