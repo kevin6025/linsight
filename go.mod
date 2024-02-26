@@ -11,7 +11,7 @@ require (
 	github.com/golang/mock v1.4.4
 	github.com/pkg/errors v0.9.1
 	github.com/spf13/cobra v1.6.1
-	github.com/stretchr/testify v1.8.2
+	github.com/stretchr/testify v1.8.4
 	github.com/teris-io/shortid v0.0.0-20220617161101-71ec9f2aa569
 	golang.org/x/crypto v0.6.0
 	gorm.io/datatypes v1.1.0
@@ -43,6 +43,7 @@ require (
 require (
 	github.com/DATA-DOG/go-sqlmock v1.5.0
 	github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible
+	github.com/antonmedv/expr v1.15.3
 	github.com/bytedance/sonic v1.8.0 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/fsnotify/fsnotify v1.6.0
@@ -100,3 +101,5 @@ require (
 	modernc.org/memory v1.4.0 // indirect
 	modernc.org/sqlite v1.19.1 // indirect
 )
+
+replace github.com/lindb/common => ../common

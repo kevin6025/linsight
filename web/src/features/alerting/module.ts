@@ -16,8 +16,11 @@ specific language governing permissions and limitations
 under the License.
 */
 import { Feature, FeatureRepositoryInst } from '@src/types';
-import { Notification } from './Notification';
+import { AlertRule, Notification } from '.';
+import { Setting } from './Setting';
 
 FeatureRepositoryInst.register(
   new Feature('/alerting/notifications/*', 'Notification', 'Notification setting', Notification)
-);
+)
+  .register(new Feature('/alerting/setting', 'Setting', 'Setting', Setting))
+  .register(new Feature('/alerting/rules/*', 'Rule', 'Alerting rule', AlertRule));
