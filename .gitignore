@@ -21,7 +21,7 @@ cpu_profile
 # mock files
 *mock.go
 *mock_test.go
-
+**/node_modules/
 web/node_modules/
 web/build/*
 web/static/*
